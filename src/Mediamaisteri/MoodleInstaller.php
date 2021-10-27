@@ -37,7 +37,7 @@ class MoodleInstaller extends LibraryInstaller {
             $name = $prettyName;
         }
 
-        $availableVars = compact('name', 'vendor', 'type');
+        $availableVars = compact('name', 'vendor');
 
         $extra = $package->getExtra();
         if (!empty($extra['installer-name'])) {
